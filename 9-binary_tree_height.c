@@ -18,9 +18,9 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	/*merge by taking the highest value*/
 	if (rhs > lhs)
-		lhs = rhs + 1;
+		lhs = rhs;
 	else
-		rhs = lhs + 1;
+		rhs = lhs;
 
-	return (rhs);
+	return (rhs + 1);
 }
